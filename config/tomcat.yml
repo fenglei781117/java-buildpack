@@ -17,7 +17,7 @@
 ---
 tomcat:
   version: 6.0.+
-  repository_root: "http://10.122.2.96:8080/examples/apache-tomcat-6.0.41.tar.gz"
+  repository_root: "http://10.122.2.96:8080/examples"
 lifecycle_support:
   version: 2.+
   repository_root: "{default.repository.root}/tomcat-lifecycle-support"
