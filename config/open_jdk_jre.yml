@@ -16,7 +16,7 @@
 # Configuration for JRE repositories keyed by vendor
 # From Java 1.8 onwards, metaspace should be used instead of permgen.  Please see the documentation for more detail.
 ---
-repository_root: "http://10.122.2.96:8080/examples/server-jre-7u60-linux-x64.gz"
+repository_root: "http://10.122.2.96:8080/examples/jsp/server-jre-7u60-linux-x64.gz"
 version: 1.6.0_+
 memory_sizes:
   # metaspace: 64m..
