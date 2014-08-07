@@ -15,5 +15,5 @@
 
 # JAVA_OPTS configuration
 ---
-from_environment: false
- java_opts:"-server -XX:SurvivorRatio=3 -XX:NewSize=512m -XX:MaxNewSize=512m -XX:+UseConcMarkSweepGC -Ddefault.client.encoding=GBK -Dfile.encoding=GBK -XX:+HeapDumpOnOutOfMemoryError -Xms1024m -Xmx1024m -XX:MaxPermSize=512m -Dygsoft.gap.plugin=cloud"
+from_environment: true
+ #java_opts:
