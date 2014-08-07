@@ -16,4 +16,4 @@
 # JAVA_OPTS configuration
 ---
 from_environment: false
-java_opts: -Xloggc:$PWD/beacon_gc.log -verbose:gc
+java_opts: -Xloggc:$PWD/beacon_gc.log -verbose:gc -Dygsoft.gap.plugin=cloud
