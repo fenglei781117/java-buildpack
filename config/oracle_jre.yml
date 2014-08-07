@@ -21,12 +21,12 @@
 
 repository_root: "http://10.122.2.96:8080/examples/grm/jre"
 version: 1.6.0_+
-#memory_sizes:
+memory_sizes:
   # metaspace: 64m..
-  #permgen: 1600m..
-#memory_heuristics:
-  #heap: 75
+  permgen: 1600m..
+memory_heuristics:
+  heap: 75
   # metaspace: 10
-  #permgen: 10
-  #stack: 5
-  #native: 10
+  permgen: 10
+  stack: 5
+  native: 10
