@@ -40,7 +40,7 @@
                    pattern='[ACCESS] %h %l %t %D %F %B %S vcap_request_id:%{X-Vcap-Request-Id}i' enabled="${access.logging.enabled}"/>
             <Host name='localhost'>
                 <Listener className="com.gopivotal.cloudfoundry.tomcat.lifecycle.ApplicationStartupFailureDetectingLifecycleListener"/>
-				<Context path="/grm" debug="0" docBase="ROOT" reloadable="true"/>
+				<!--<Context path="/grm" debug="0" docBase="ROOT" reloadable="true"/>-->
             </Host>
         </Engine>
     </Service>
