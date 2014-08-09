@@ -15,4 +15,5 @@
 ~ limitations under the License.
 -->
 <Context allowLinking='true'>
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
 </Context>
