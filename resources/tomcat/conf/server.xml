@@ -37,15 +37,15 @@
        Documentation at /docs/jndi-resources-howto.html
   -->
   <GlobalNamingResources>
-	<!--<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
+	<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
     		maxIdle="4"    username="FMIS9999"    maxWait="50000"
     		driverClassName="oracle.jdbc.driver.OracleDriver"  validationQuery="select 1 from dual"
-    		password="FMIS9999"  url="jdbc:oracle:thin:@10.51.6.95:1521:plus21"/>
-	-->
-	<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
+    		password="FMIS9999"  url="jdbc:oracle:thin:@10.51.102.41:1521:plus21"/>
+	
+	<!--<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
     		maxIdle="4"    username="root"    maxWait="50000"
     		driverClassName="com.mysql.jdbc.Driver"  validationQuery="select sysdate"
-    		password="root"  url="jdbc:mysql://10.52.2.28:3306/test?useUnicode=true&amp;characterEncoding=UTF-8"/>
+    		password="root"  url="jdbc:mysql://10.52.2.28:3306/test?useUnicode=true&amp;characterEncoding=UTF-8"/>-->
 	
 	<!--<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
     		maxIdle="4"    username="sa"    maxWait="50000"
