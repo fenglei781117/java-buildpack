@@ -21,8 +21,19 @@
     <Listener className='org.apache.catalina.core.JasperListener'/>
 
     <Service name='Catalina'>
+	    <Listener className="com.ygsoft.gap.middleware.tomcat.TomcatListener" />
         <Connector port='${http.port}' bindOnInit="false"/>
-
+<GlobalNamingResources>
+<Resource name="jdbc/fmismain" auth="Container" type="javax.sql.DataSource" maxActive="30" 
+    		maxIdle="4"    username="sa"    maxWait="50000"
+    		driverClassName="org.h2.Driver"  validationQuery="select 1"
+    		password=""  url="jdbc:h2:mem:unittest"/>
+			<Resource name="UserDatabase" auth="Container"
+              type="org.apache.catalina.UserDatabase"
+              description="User database that can be updated and saved"
+              factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+              pathname="conf/tomcat-users.xml" />
+</GlobalNamingResources>
         <Engine defaultHost='localhost' name='Catalina'>
             <Valve className="org.apache.catalina.valves.RemoteIpValve" protocolHeader="x-forwarded-proto"/>
             <Valve className="com.gopivotal.cloudfoundry.tomcat.logging.access.CloudFoundryAccessLoggingValve"
